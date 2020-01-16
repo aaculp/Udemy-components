@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
 
 // Used for fake data
 import faker from 'faker';
@@ -8,12 +9,14 @@ import faker from 'faker';
 const App = () => {
     return (
         <div className = 'ui container comments'>
-            <CommentDetail 
-                author = 'Aaron'
-                date = 'Today: 6PM'
-                text = "Hey. Who's on?"
-                src = {faker.image.avatar()}
-            />
+            <ApprovalCard> 
+                <CommentDetail 
+                    author = 'Aaron'
+                    date = 'Today: 6PM'
+                    text = "Hey. Who's on?"
+                    src = {faker.image.avatar()}
+                />
+            </ApprovalCard>
             <CommentDetail 
                 author = 'Sam'
                 date = 'Today: 7PM'

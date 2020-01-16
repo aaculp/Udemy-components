@@ -1,11 +1,14 @@
 import React from 'react';
+import CommentDetail from './CommentDetail';
 
-const ApprovalCard = () => {
+const ApprovalCard = (props) => {
+    // console.log(props.children)
     return (
         <div className = "ui card">
 
             <div className = "content">
-                Are you sure?
+                {/* Coming from the Child component CommentDetail */}
+                {props.children}
             </div>
 
             <div className = "extra content">
@@ -14,7 +17,7 @@ const ApprovalCard = () => {
                     <div className = "ui basic red button">Reject</div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

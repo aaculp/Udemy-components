@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Used for fake data
 import faker from 'faker';
 
 const CommentDetail = (props) => {
