@@ -12,18 +12,20 @@ const App = () => {
                 author = 'Aaron'
                 date = 'Today: 6PM'
                 text = "Hey. Who's on?"
-                />
+                src = {faker.image.avatar()}
+            />
             <CommentDetail 
                 author = 'Sam'
                 date = 'Today: 7PM'
                 text = "Hey Aaron. How are you?"
-                 />
+                src = {faker.image.avatar()}
+            />
             <CommentDetail 
                 author = 'Kyle'
                 date = 'Today: 7:30PM'
                 text = "Hey Sam."
-                 />
-                
+                src = {faker.image.avatar()}
+            />
         </div>
     )
 }
